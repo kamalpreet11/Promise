@@ -1,7 +1,8 @@
 # Promise
 
-#Usage
+# Usage
 
+```
 (new Promise())
     .then((Promise.Task<Void, Integer>) args -> 100)
     .then((Promise.Task<Integer, String>) args -> String.valueOf(args))
@@ -10,3 +11,4 @@
         return Integer.valueOf(args) == 100;
     })
     .catchError((error, task) -> System.out.println("Got error: " + error.getMessage()));
+```
